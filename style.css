@@ -1,0 +1,405 @@
+/* Mobile styling. No carousel couldn't get that to work. :( */
+
+.show-desktop{
+  display:none;
+}
+
+.mobile-gallery {
+  display:flex;
+  flex-direction:column;
+}
+
+.mobile-gallery img {
+  width: 100%;
+  display:block;
+}
+
+.mobile-gallery-item {
+  position:relative;
+  margin-top:10px;
+}
+
+.mobile-gallery-item1 {
+  position: relative;
+  margin-top:0;
+}
+
+.lightbox {
+  display:none;
+}
+
+.caption {
+  position: absolute;
+  font-size: 16px;
+  color:white;
+  left:10px;
+  bottom:0;
+  text-shadow: 2px 2px 6px black;
+}
+
+.caption-real {
+  position: absolute;
+  width:100%;
+  height:100%;
+  background-color:rgba(0,0,0,0.5);
+  opacity:0;
+}
+
+.caption-real p {
+  font-size: 16px;
+  color:white;
+  position:absolute;
+  left:10px;
+  right:10px;
+  text-align:center;
+  bottom:20%;
+}
+
+.caption-real:hover {
+  opacity:1;
+}
+
+.year {
+  position:absolute;
+  color:white;
+  text-shadow: 2px 2px 6px black;
+  right:16px;
+}
+
+.year h2 {
+  font-size:32px;
+  font-family: 'Josefin Sans', sans-serif;
+  color:white;
+}
+
+h2 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+}
+
+.title {
+  margin:10px;
+}
+
+/* unrelated footer styling */
+
+    footer {
+      float:right;
+      margin-right:5px;
+
+    }
+
+    footer p{
+      font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 12px;
+    }
+
+/* Extra small devices (portrait phones, less than 576px)
+No media query for `xs` since this is the default */
+
+/* Viewport width for iPhone 12 Mini -> 360px */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  .helper {
+    background-color: orange;
+  }
+
+  .helper::after {
+    content: 'S';
+  }
+
+  .year h2 {
+    font-size:42px;
+    font-family: 'Josefin Sans', sans-serif;
+    color:white;
+  }  
+
+  .caption-real p {
+    font-size: 22px;
+    color:white;
+    position:absolute;
+    left:10px;
+    right:10px;
+    text-align:center;
+    bottom:30%;
+  }
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .helper {
+    background-color: yellow;
+  }
+
+  .helper::after {
+    content: 'M';
+    color: black;
+  }
+
+  .show-mobile {
+    display:none;
+  }
+
+  .show-desktop {
+    display:contents;
+  }
+
+   /* Wrapper for images, cannot use grid here because then there will be a gap between different sized images */
+   
+   .gallery {
+    display:block;
+    column-count:3;
+    gap:10px;
+  }
+
+    /* Setting display to block and width to 100% makes all the images roughly the same size and removes image margin */
+
+    .gallery img {
+      width: 100%;
+      display:block;
+    }
+  
+    /* 'caption' here is actually credit and can be changed it it is that big of an issue.
+    This puts it in the bottom corner with a shadow so that it can be read on lighter images */
+  
+    .caption {
+      position: absolute;
+      font-size: 16px;
+      color:white;
+      bottom:0;
+      left:16px;
+      text-shadow: 2px 2px 6px black;
+      transition:0.5s;
+    }
+  
+    /* Year is only visible on hover, center aligned and darkens the image when shown */
+  
+    .year {
+      position:absolute;
+      top:0;
+      left:0;
+      justify-content:center;
+      align-items:center;
+      width:100%;
+      height:100%;
+      display:flex;
+      opacity:0;
+      transition:0.5s;
+      background-color:rgba(0,0,0,0.5);
+      }
+  
+      /* All fonts not final */
+  
+      .year h2 {
+        font-size:64px;
+        font-family: 'Josefin Sans', sans-serif;
+        color:white;
+      }
+  
+      /* This is some pretty fucky styling but it works, margin is needed here because
+      padding would make the shadow from the year overlay go into the white space.  */
+  
+      .gallery-item{
+        position:relative;
+        margin-top: 10px 
+      }
+  
+      /* Gallery item 1 is needed because I do not understand how psuedo-classes work and it was easier to 
+      just change the first item than experiment any more than I had. Only difference between gallery-item and gallery-item1
+      is the top margin. Without this, the first column would be indented from the top by 10px */
+  
+      .gallery-item1 {
+        position:relative;
+      }
+  
+      /* Could be redundant but just to be safe */
+  
+      .gallery-image {
+        cursor:pointer;
+      }
+
+  .lightbox {
+    display:none;
+  }
+
+  .lightbox img {
+    width:100%;
+  }
+
+  .lightbox:target {
+    position: absolute;
+    left: 0;
+    top:0;
+    width:100%;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .lightbox figcaption {
+    width: 25rem;
+    position: absolute;
+    padding:20px;
+    bottom:21%;
+    left:6.5%;
+    background-color:rgba(0,0,0,0.5);
+    font-size: 18px;
+    color:white;
+  }
+
+  .lightbox .close {
+    position: relative;
+    display: block;
+  }
+
+  .lightbox .close::after {
+    right: -1rem;
+    top: -1rem;
+    width: 2rem;
+    height: 2rem;
+    position: absolute;
+    display: flex;
+    z-index: 1;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-radius: 50%;
+    color: white;
+    content: "×";
+    cursor: pointer;
+  }
+
+  .lightbox .close::before {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    content: "";
+    background-color: rgba(0,0,0,0.7);
+    cursor: default;
+  }
+
+  /* .tall class scales the vertical images down so that when they are in the lightbox they dont run off the page */
+
+  .tall img {
+    transform:scale(60%);
+  }
+
+  .tall figcaption {
+    left:21%;
+    bottom:9%;
+    transform:scale(90%);
+  }
+
+  /* puts the X button on the top right corner */
+
+  .tall-close .close {
+    display: block;
+    position:absolute;
+    top:8.5%;
+    right:23%;
+  }
+
+  /* I know this looks redundant but it was the only way to make it so that the 
+  short images don't inheret the background-color from .lightbox .close::before */
+
+  .short img {
+    transform: scale(99%);
+  }
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .helper {
+    background-color: green;
+  }
+
+  .helper::after {
+    content: 'L';
+    color: white;
+  }
+  .lightbox figcaption {
+    width: 25rem;
+    position: absolute;
+    padding:20px;
+    bottom:7%;
+    left:5%;
+    background-color:rgba(0,0,0,0.5);
+    font-size: 18px;
+    color:white;
+  }
+
+    /* removes credit on hover, could change to lower opactity in accordance with the year hover if needed  */
+
+    .gallery-item:hover .caption {
+      opacity:0;
+    }
+  
+    /* gallery-item1 will be explained later */
+  
+    .gallery-item1:hover .caption {
+      opacity:0;
+    }
+  
+    .gallery-item:hover .year{
+      opacity:1;
+    }
+
+    .gallery-item1:hover .year{
+      opacity:1;
+    }
+
+    .tall img {
+      transform:scale(60%);
+    }
+    .tall figcaption {
+      left:23%;
+      bottom: 10%;
+      transform:scale(100%);
+    }
+
+    /* puts the X button on the top right corner */
+
+    .tall-close .close {
+      display: block;
+      position:absolute;
+      top:8.5%;
+      right:22%;
+    }
+
+  
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .helper {
+    background-color: blue;
+  }
+
+  .helper::after {
+    content: 'XL';
+  }
+
+  .tall img {
+    transform:scale(45%);
+  }
+  .tall figcaption {
+    left:30%;
+    bottom:6.5%;
+  }
+
+  /* puts the X button on the top right corner */
+
+  .tall-close .close {
+    display: block;
+    position:absolute;
+    top:4.5%;
+    right:29%;
+  }
+
+}

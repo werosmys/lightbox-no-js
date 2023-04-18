@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap" rel="stylesheet">
+    <title>Image Gallery Demo</title>
+</head>
+<body>
+  <div class="title">
+    <h2 class="show-mobile">Tap on an image to see its caption</h2>
+    <h2 class="show-desktop">Click to enlarge image</h2>
+  </div>
+  <!-- Mobile -->
+  <div class="mobile-gallery show-mobile">
+    <a href="#caption1"> <!-- Tapping the image will open the caption box -->
+    <div class="mobile-gallery-item1"> <!-- Usage of mobile-gallery-item1 is explained in CSS -->
+            <div class="overlay">
+                <div class="year">
+                    <h2>2010</h2> <!-- year will obviously be changed to reflect the actual year of the photo -->
+                </div>
+                <div class="caption"> <!-- Actually a credit attribute and can be modified to fit IDS styling -->
+                    <p>Photo: Sarah Parrish</p>
+                </div>
+                <div class="caption-real">
+                  <p>This is a memorial to the women who died fighting fires during the Blitz in London, 1940. Women were only permitted to drive fire trucks, but they were an invaluable part of the force during the Blitz.</p>
+                </div>
+            </div>
+            <img src="photos/20230316_London1_0070.jpeg" alt="">
+        </div>
+    </a>
+    <a href="#caption2">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2011</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>This is the dome of St Paul's Cathedral in London. The Golden Gallery is a viewing area on the dome which is over 500 steps from the main hall.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0071.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption3">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2012</h2>
+            </div>
+            <div class="caption">
+              <p>Photo: Sarah Parrish</p>
+            </div>
+            <div class="caption-real">
+              <p>This is the Café Rouge, which is a cafe across the street from St Paul's. I just took a photo of it because I liked the red on white.</p>
+            </div>
+        </div>
+        <img src="photos/20230316_London1_0080.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption4">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2013</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>This is a clock face on one of the towers of St Paul's Cathedral. I took a photo of it to see how much detail I could get from the ground.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0087.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption5">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2014</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>This is an example of some of the stonework inside of St Paul's Cathedral. It shows how dirty the stone was before, and the contrast between the dirty original stone and the cleaned restored stone is stark.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0106.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption6">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2015</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>Looking up at the trumpets which famously startled Queen Elizabeth II when she arrived in the cathedral without being warned they would play. They never played in her presence again.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0108.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption7">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2016</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>A long shot of the inside of St Paul's Cathedral. The domes are adorned with biblical paintings and a large golden statue sits at the far end of the hall.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0120.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption8">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2017</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>This is a shot looking directly up at the dome of St Paul's Cathedral. I took it because I am a fan of radial symmetry which this image has in droves.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0129.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#caption9">
+      <div class="mobile-gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2018</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+          <div class="caption-real">
+            <p>This is a closer look at the golden statue from before. There are stained glass windows behind it (not pictured) which is the only stained glass in the entire cathedral, and they were installed to honor the fallen British and American airmen during WWII.</p>
+          </div>
+        </div>
+        <img src="photos/20230316_London1_0201.jpeg" alt="">
+      </div>
+      </a>
+   </div>
+   <!-- Desktop -->
+   <div class="gallery show-desktop">
+    <a href="#image1"> <!-- Clicking the image will open the lightbox -->
+    <div class="gallery-item1"> <!-- Usage of gallery-item1 is explained in CSS -->
+            <div class="overlay">
+                <div class="year">
+                    <h2>2010</h2> <!-- year will obviously be changed to reflect the actual year of the photo -->
+                </div>
+                <div class="caption"> <!-- Actually a credit attribute and can be modified to fit IDS styling -->
+                    <p>Photo: Sarah Parrish</p>
+                </div>
+            </div>
+            <img class="gallery-image" src="photos/20230316_London1_0070.jpeg" alt="">
+        </div>
+    </a>
+    <a href="#image2">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2011</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0071.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image3">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2012</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0080.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image4">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2013</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0087.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image5">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2014</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0106.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image6">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2015</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0108.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image7">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2016</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0120.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image8">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2017</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0129.jpeg" alt="">
+      </div>
+      </a>
+      <a href="#image9">
+      <div class="gallery-item">
+        <div class="overlay">
+            <div class="year">
+                <h2>2018</h2>
+            </div>
+          <div class="caption">
+            <p>Photo: Sarah Parrish</p>
+          </div>
+        </div>
+        <img class="gallery-image" src="photos/20230316_London1_0201.jpeg" alt="">
+      </div>
+      </a>
+   </div>
+<!-- Desktop lightbox -->
+<div class="lightbox" id="image1"> <!-- Borrowed from Mozilla -->
+    <figure>
+        <a href="#" class="close"></a> <!-- fun fact the close button is not necessary, clicking outside of the image will close the lightbox -->
+        <div class="short"> <!-- Use of "short" and "tall" classes explained in CSS -->
+            <img src="photos/20230316_London1_0070.jpeg" alt="">
+            <figcaption>This is a memorial to the women who died fighting fires during the Blitz in London, 1940. Women were only permitted to drive fire trucks, but they were an invaluable part of the force during the Blitz.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image2">
+    <figure>
+        <a href="#" class="close"></a>
+        <div class="short">
+            <img src="photos/20230316_London1_0071.jpeg" alt="">
+            <figcaption>This is the dome of St Paul's Cathedral in London. The Golden Gallery is a viewing area on the dome which is over 500 steps from the main hall. </figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image3">
+    <figure class="tall-close">
+        <a href="#" class="close"></a>
+        <div class="tall">
+            <img src="photos/20230316_London1_0080.jpeg" alt="">
+            <figcaption>This is the Café Rouge, which is a cafe across the street from St Paul's. I just took a photo of it because I liked the red on white. </figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image4">
+    <figure>
+        <a href="#" class="close"></a>
+        <div class="short">
+            <img src="photos/20230316_London1_0087.jpeg" alt="">
+            <figcaption>This is a clock face on one of the towers of St Paul's Cathedral. I took a photo of it to see how much detail I could get from the ground.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image5">
+    <figure class="tall-close">
+        <a href="#" class="close"></a>
+        <div class="tall">
+            <img src="photos/20230316_London1_0106.jpeg" alt="">
+            <figcaption>This is an example of some of the stonework inside of St Paul's Cathedral. It shows how dirty the stone was before, and the contrast between the dirty original stone and the cleaned restored stone is stark.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image6">
+    <figure>
+        <a href="#" class="close"></a>
+        <div class="short">
+            <img src="photos/20230316_London1_0108.jpeg" alt="">
+            <figcaption>Looking up at the trumpets which famously startled Queen Elizabeth II when she arrived in the cathedral without being warned they would play. They never played in her presence again.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image7">
+    <figure class="tall-close">
+        <a href="#" class="close"></a>
+        <div class="tall">
+            <img src="photos/20230316_London1_0120.jpeg" alt="">
+            <figcaption>A long shot of the inside of St Paul's Cathedral. The domes are adorned with biblical paintings and a large golden statue sits at the far end of the hall.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image8">
+    <figure>
+        <a href="#" class="close"></a>
+        <div class="short">
+            <img src="photos/20230316_London1_0129.jpeg" alt="">
+            <figcaption>This is a shot looking directly up at the dome of St Paul's Cathedral. I took it because I am a fan of radial symmetry which this image has in droves.</figcaption>
+        </div>
+    </figure>
+</div>
+<div class="lightbox" id="image9">
+    <figure>
+        <a href="#" class="close"></a>
+        <div class="short">
+            <img src="photos/20230316_London1_0201.jpeg" alt="">
+            <figcaption>This is a closer look at the golden statue from before. There are stained glass windows behind it (not pictured) which is the only stained glass in the entire cathedral, and they were installed to honor the fallen British and American airmen during WWII.</figcaption>
+        </div>
+    </figure>
+</div>
+<footer>
+    <p>Sarah Parrish © 2023</p>
+</footer>
+</body>
+</html>
